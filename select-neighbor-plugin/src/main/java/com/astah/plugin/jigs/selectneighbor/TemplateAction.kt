@@ -2,6 +2,7 @@ package com.astah.plugin.jigs.selectneighbor
 
 
 import com.change_vision.jude.api.inf.AstahAPI
+import com.change_vision.jude.api.inf.model.IAssociation
 import com.change_vision.jude.api.inf.presentation.INodePresentation
 import com.change_vision.jude.api.inf.ui.IPluginActionDelegate
 import com.change_vision.jude.api.inf.ui.IWindow
@@ -13,6 +14,7 @@ class TemplateAction : IPluginActionDelegate {
         val targetNodes = diagramViewManager.selectedPresentations
                 .filterIsInstance<INodePresentation>()
                 .flatMap { node -> node.links.filter { it.source == node } }
+                .filter { it.model is IAssociation }
                 .map { it.target }
                 .toTypedArray()
         diagramViewManager.select(targetNodes)
