@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
-   <extension point="com.change_vision.astah.ui.actionSets">
-      <actionSet
-            label="%action_set_label"
-            visible="true"
-            id="com.astah.plugin.jigs.select-neighbor-plugin.actionSet">
-         <menu
-               id="select-neighbor-plugin"
-               label="%menu_group"
-               path="tool/select-neighbor-plugin">
-         </menu>
-         <action
-			   label="%menu_label"
-               icon="icons/sample.gif"
-               class="com.astah.plugin.jigs.selectneighbor.TemplateAction"
-               tooltip="%menu_tooltip"
-               menubarPath="tool/select-neighbor-plugin/"
-               id="select-neighbor-plugin">
-         </action>
-     </actionSet>
-   </extension>
+    <extension point="com.change_vision.astah.ui.actionSets">
+        <actionSet
+                label="%action_set_label"
+                visible="true"
+                id="com.astah.plugin.jigs.select-neighbor-plugin.actionSet">
+            <menu
+                    id="select-neighbor-plugin"
+                    label="%menu_group"
+                    path="tool/select-neighbor-plugin">
+            </menu>
+            <action
+                    label="%menu_label"
+                    icon="icons/sample.gif"
+                    class="com.astah.plugin.jigs.selectneighbor.TemplateAction"
+                    tooltip="%menu_tooltip"
+                    menubarPath="tool/select-neighbor-plugin/"
+                    id="select-neighbor-plugin">
+            </action>
+        </actionSet>
+    </extension>
 </plugin>
